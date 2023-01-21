@@ -1,0 +1,17 @@
+.input {
+  max-width: 100%;
+  width: 100%;
+  white-space: pre-wrap;
+  padding: 0.5rem 0;
+  word-break: break-word;
+  caret-color: #37352f;
+  color: #222;
+  cursor: text;
+  position: relative;
+  animation: appear 3s;
+
+  &:focus {
+    outline: none;
+    animation: fadeIn 3s;
+  }
+}

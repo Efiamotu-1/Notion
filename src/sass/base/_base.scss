@@ -1,0 +1,25 @@
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: $color-primary;
+}
+
+.container {
+  width: 65%;
+  height: 100vh;
+  margin: 3rem auto 0;
+  animation: dropDown 2s;
+}
+
+[contenteditable]:empty::before {
+  content: attr(placeholder);
+  color: $color-grey;
+}

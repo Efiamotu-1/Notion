@@ -1,0 +1,73 @@
+.popup {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 15rem;
+  background-color: $color-white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $color-white;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $color-grey;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $color-grey;
+  }
+
+  &__header {
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-bottom: 1px solid $color-grey-light;
+    text-align: center;
+  }
+
+  &__list {
+    padding: 0.5rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__item {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    p {
+      color: $color-grey;
+      font-size: 0.8rem;
+      margin-top: 0.2rem;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $color-grey-light;
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+header {
+  nav {
+    width: 100%;
+    height: 50px;
+    border: 1px solid $color-grey-light;
+    border-radius: 7px;
+    display: flex;
+    margin-bottom: 2rem;
+
+    ul {
+      width: 100%;
+      padding: 0 0.5rem;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+        cursor: pointer;
+
+        :hover {
+          animation: fadeIn 3s;
+        }
+
+        img {
+          width: 25px;
+          height: 25px;
+        }
+
+        svg {
+          width: 25px;
+          height: 25px;
+        }
+
+        @for $i from 1 through 3 {
+          &:nth-child(#{$i}) {
+            border-right: 1px solid $color-grey-light;
+            padding-right: 1rem;
+          }
+        }
+
+        &:nth-child(4) {
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}
