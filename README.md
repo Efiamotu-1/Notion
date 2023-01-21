@@ -26,9 +26,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Notion] <a name="about-project"></a>
+# 📖 Notion <a name="about-project"></a>
 
-**[Notion]** is a simple editor like notion which has the ability to Create Paragraphs and Headings such as H1, H2, P...  by simply typing / then 1, then typing the text, and hitting enter. You can also select the p, h1, h2,..., h6 option from the list of options that appears when you type `/`. 
+**Notion** is a simple editor like notion which has the ability to Create Paragraphs and Headings such as H1, H2, P...  by simply typing / then 1, then typing the text, and hitting enter. You can also select the p, h1, h2,..., h6 option from the list of options that appears when you type `/`. 
 
 ## 🛠 Built With <a name="built-with"></a>
 ### Tech Stack <a name="tech-stack"></a>
@@ -60,11 +60,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[Creates Heading tags as well as paragraphs by by simply typing / then 1, then typing the text, and hitting enter.]**
-- **[displays a popup for users to select from]**
-- **[Animations to enhance the aesthetically pleasing user interface]**
+- **Creates Heading tags as well as paragraphs by by simply typing / then 1, then typing the text, and hitting enter.**
+- **displays a popup for users to select from**
+- **Animations to enhance the aesthetically pleasing user interface**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -72,7 +70,6 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
 
 - [Live Demo Link](https://efiamotu-1.github.io/Notion/dist/)
 
@@ -82,7 +79,6 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -91,7 +87,7 @@ To get a local copy up and running, follow these steps.
 In order to run this project you need:
 
 ```sh
- Node, preferablly that latest version, v.16 
+ Node, latest stable version
 ```
 
 
@@ -129,17 +125,6 @@ To run the project, execute the following command:
   npm start
 ```
 
-
-
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
 
 ### Deployment
 
@@ -183,7 +168,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
+
 
 If you like this project...
 
