@@ -41,27 +41,26 @@ body {
   font-weight: 400;
 }
 
-.heading-primary__title {
-  padding: 0.5rem 0;
-  font-size: 2rem;
-  animation: left 2s;
+.heading-primary {
+  &__title {
+    padding: 0.5rem 0;
+    font-size: 2rem;
+    animation: left 2s;
+  }
+
+  &__content {
+    padding: 1rem 0;
+    color: $color-content;
+    line-height: 1.5;
+    animation: right 2s;
+  }
 }
 
 hr {
   border: 1px solid $color-grey-light;
 }
 
-.icon-red {
-  color: red;
-}
-
-.icon-green {
-  color: green;
-}
-
-.heading-primary__content {
-  padding: 1rem 0;
-  color: darken($color-white, 75);
-  line-height: 1.5;
-  animation: right 2s;
+.p-img {
+  background-color: #bbffd2;
+  border-radius: 2px;
 }

@@ -2,12 +2,15 @@ import { showPopup } from './popup.js';
 import selectHeading from './selectHeading.js';
 import createHeading from './createHeading.js';
 import createNewInput from './createNewInput.js';
+import filterInput from './filterInput.js';
 
 const handleUserInput = (input = document.getElementById('1')) => {
   input.addEventListener('input', () => {
     if (input.textContent[0] === '/') {
       // displays the popup showing the different heading types
       showPopup(input);
+      // filter the inputs for the heading option after user presses /
+      filterInput(input.textContent);
       // listens and send the heading the user selects
       selectHeading(input);
     }
@@ -48,6 +51,34 @@ const handleUserInput = (input = document.getElementById('1')) => {
 
       const newInput = createNewInput(input, input.id);
       handleUserInput(newInput);
+    }
+
+    /* If the user presses 'Backspace' && the input text content is empty && the
+       input is not the first one:
+        - Remove the input and focus the previous input
+        - Add the placeholder to the previous input />
+        - Put the cursor at the end of the previous input content 
+    */
+    if (
+      e.key === 'Backspace' &&
+          input.textContent.length === 0 &&
+          input.id !== '1'
+    ) {
+      const previousInput = input.previousElementSibling;
+      input.remove();
+      previousInput.setAttribute('placeholder', "Type '/' for blocks");
+
+      // Add space to the previous input to make sure the cursor is at the end of the content
+      previousInput.textContent += ' ';
+      previousInput.focus();
+      const range = new Range();
+      const sel = window.getSelection();
+      range.setStart(
+        previousInput.childNodes[0] || previousInput,
+        previousInput.textContent.length
+      );
+      sel.removeAllRanges();
+      sel.addRange(range);
     }
   });
 };

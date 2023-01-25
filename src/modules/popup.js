@@ -8,8 +8,8 @@ const showPopup = (input) => {
   const htmlPopup = `
   <div class="popup">
     <div class="popup__header">
-      <h5">Add Blocks</h5>
-      <p>scroll to select or click escape to exit</p>
+      <h5>Add Blocks</h5>
+      <p>keep typing to filter or click escape to exit</p>
     </div>
     <div class="popup__list" role="listitem">
       ${headingsList.map((option) => `

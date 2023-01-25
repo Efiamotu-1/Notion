@@ -9,7 +9,7 @@ const createNewInput = (currentInput, currentId) => {
 
   currentInput.insertAdjacentElement('afterend', newInput);
   newInput.focus();
-  // returns the new inout to be created
+  // returns the new input to be created
   return newInput;
 };
 
